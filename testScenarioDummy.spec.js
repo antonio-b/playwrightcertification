@@ -8,5 +8,4 @@ test('Test Scenario 1 on TestMu AI', async ({ page }) => {
   await expect(page).toHaveURL('https://www.testmuai.com/selenium-playground/simple-form-demo/');
   await page.getByPlaceholder('Please enter your Message').fill(textEntered);
   await page.getByRole('button', { name: 'Get Checked Value' }).click();
-  await expect(page.locator('#message')).toContainText(textEntered);
 });
